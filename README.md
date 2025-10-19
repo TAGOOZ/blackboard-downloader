@@ -2,7 +2,7 @@
 
 ![Blackboard Files Downloader Logo](logo.png)
 
-A Chrome extension that automatically downloads files from Blackboard Learning Management System.
+A Chrome extension that automatically downloads files from Blackboard LMS with ONE SHOT.
 
 ## Features
 

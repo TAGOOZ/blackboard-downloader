@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Blackboard File Downloader",
+  "version": "1.0",
+  "description": "Automatically downloads files from Blackboard Learning Management System.",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.blackboard.com/*",
+    "*://*.blackboard.edu/*",
+    "*://*.blackboard.org/*",
+    "*://*.blackboard.net/*",
+    "*://*.blackboardcdn.com/*",
+    "*://*/webapps/blackboard/*",
+    "*://*/ultra/*",
+    "*://*/learn/*"
+  ],
+  "action": {
+    "default_title": "Blackboard File Downloader",
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "48": "icons/icon_48.png",
+      "128": "icons/icon_128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.blackboard.com/*",
+        "*://*.blackboard.edu/*",
+        "*://*.blackboard.org/*",
+        "*://*.blackboard.net/*",
+        "*://*/webapps/blackboard/*",
+        "*://*/ultra/*",
+        "*://*/learn/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  }
+}

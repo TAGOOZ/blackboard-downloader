@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blackboard File Downloader</title>
+  <style>
+    body { width: 350px; padding: 15px; font-family: Arial, sans-serif; }
+    h1 { font-size: 18px; margin: 0 0 10px 0; }
+    h3 { font-size: 14px; margin: 10px 0 5px 0; }
+    p { font-size: 13px; color: #666; margin: 5px 0; }
+    button { 
+      margin: 10px 0; 
+      padding: 8px 15px; 
+      background-color: #4285f4; 
+      color: white; 
+      border: none; 
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover { background-color: #3367d6; }
+    button:disabled { background-color: #cccccc; cursor: not-allowed; }
+    #status {
+      margin-top: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
+    #fileList { 
+      margin-top: 10px; 
+      max-height: 250px; 
+      overflow-y: auto; 
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 5px;
+    }
+    .file-item { 
+      margin: 5px 0; 
+      padding: 6px; 
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      background-color: #f9f9f9;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .file-item:hover {
+      background-color: #f0f0f0;
+    }
+    .footer {
+      margin-top: 15px;
+      font-size: 11px;
+      color: #999;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blackboard File Downloader</h1>
+  <p>Click to scan for and download all available files from the current Blackboard page.</p>
+  <p>The extension will expand content sections and open menus to find all files.</p>
+  <button id="downloadAll">Download All</button>
+  <div id="status" style="display: none;"></div>
+  <div id="fileList" style="display: none;"></div>
+  <div class="footer">
+    Make sure you have expanded all sections in Blackboard for best results.
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -4,6 +4,14 @@
 
 A Chrome extension that automatically downloads files from Blackboard LMS with ONE SHOT.
 
+## Demo
+
+<video width="600" autoplay loop muted playsinline>
+  <source src="animation.webm" type="video/webm">
+  <source src="animation.mp4" type="video/mp4">
+  Your browser does not support the video tag. View the <a href="optimized.gif">optimized GIF</a> instead.
+</video>
+
 ## Features
 
 - Automatically detects files in Blackboard pages

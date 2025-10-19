@@ -8,7 +8,6 @@ A Chrome extension that automatically downloads files from Blackboard LMS with O
 
 [![Blackboard Files Downloader demo](optimized.gif)](animation.mp4)
 
-Click the GIF to watch the higher-quality MP4.
 
 ## Features
 

@@ -20,11 +20,10 @@ A Chrome extension that automatically downloads files from Blackboard LMS with O
 
 ### Manual Installation (Developer Mode)
 
-1. Download the latest release zip from [Releases](https://github.com/TAGOOZ/blackboard-downloader/releases) or clone this repository
-2. Unzip the file
-3. Open Chrome and go to `chrome://extensions/`
-4. Enable "Developer mode" at the top right
-5. Click "Load unpacked" and select the unzipped folder
+1. Clone this repository
+2. Open Chrome and go to `chrome://extensions/`
+3. Enable "Developer mode" at the top right
+4. Click "Load unpacked" and select the folder or the repo
 
 ## Usage
 
